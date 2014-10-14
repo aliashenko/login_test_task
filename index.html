@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>User Information</title>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <a href="#" id="facebook_button">Get Facebook info</a>
+  <a href="#" id="linkedin_button">Get Linkedin info</a>
+  <div class='user_info'></div>
+
+  <script src="jquery-2.1.1.js"></script>
+  <script src="http://connect.facebook.net/en_US/all.js"></script>
+  <script type="text/javascript">
+    FB.init(
+    { 
+      appId  : '643610905758017',
+      status : true,
+      cookie : true
+    });
+  </script>  
+  <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+    api_key: 75jfcmf5027clz
+    authorize: true
+    scope: r_basicprofile
+  </script>
+  <script src="user_information.js"></script>
+  <script type="text/javascript">
+    init();
+  </script>
+</body>
+</html>
